@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import { resolve } from 'path'
 import { createSvgIconsPlugin }  from 'vite-plugin-svg-icons';
 import path from 'path';
 
@@ -18,6 +19,10 @@ export default defineConfig({
   ],
   build: {
     rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        s4: resolve(__dirname, 'step-4.html'),
+      },
       output: {
         entryFileNames: `assets/[name].js`,
         chunkFileNames: `assets/[name].js`,
