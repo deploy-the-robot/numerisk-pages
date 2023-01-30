@@ -1,0 +1,20 @@
+
+// Base
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 14px;
+}
+body {
+  color: $color-secondary;
+  font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  letter-spacing: .01em;
+  line-height: 1.6;
+  margin: 0;
+}

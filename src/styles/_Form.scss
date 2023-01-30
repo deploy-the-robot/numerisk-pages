@@ -1,0 +1,79 @@
+
+// Form
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+input[type='color'],
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='email'],
+input[type='month'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+input[type='week'],
+input:not([type]),
+textarea,
+select {
+  -webkit-appearance: none;
+  appearance: none;
+  border: .1rem solid transparent;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: inherit;
+  height: 3.15rem;
+  padding: .6rem 1.0rem .7rem;
+  width: 100%;
+  background-color: #f1f2f3;
+  font-size: 1em;
+  &:hover {
+    border-color: $color-quaternary;
+  }
+  &:focus {
+    border-color: $color-primary;
+    background-color: transparent;
+    outline: 0;
+  }
+
+}
+
+select {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 8" width="30"><path fill="%23' + str-slice(inspect($color-quaternary), 2) + '" d="M0,0l6,8l6-8"/></svg>') center right no-repeat, #f1f2f3;
+
+  padding-right: 3.0rem;
+
+  &:focus {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 8" width="30"><path fill="%23' + str-slice(inspect($color-primary), 2) + '" d="M0,0l6,8l6-8"/></svg>');
+  }
+  &[multiple] {
+    background: none;
+    height: auto;
+  }
+}
+textarea {
+  padding-top: 1em;
+  min-height: 6.5rem;
+  font-family: inherit;
+}
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+}
+fieldset {
+  border-width: 0;
+  padding: 0;
+}
+input[type='checkbox'],
+input[type='radio'] {
+  display: inline;
+}
+.label-inline {
+  display: inline-block;
+  font-weight: normal;
+  margin-left: .5rem;
+}
