@@ -1,8 +1,10 @@
 import "/src/styles/global.scss";
-import "/src/js/gumshoe"
+import Gumshoe from "gumshoejs"
 
 
-// utility functions
+/*!
+ * main JS
+ */
 
 var Util = {}
 
