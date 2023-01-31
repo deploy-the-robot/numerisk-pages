@@ -7,8 +7,10 @@
   box-sizing: inherit;
 }
 html {
+  scroll-behavior: smooth;
   box-sizing: border-box;
   font-size: 14px;
+  scroll-padding-top: 50px;
 }
 body {
   color: $color-secondary;

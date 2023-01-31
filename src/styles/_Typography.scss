@@ -78,6 +78,11 @@ ul {
   }
 }
 
+.bulets-inline {
+  list-style: disc outside;
+  margin-left: 0.9em;
+}
+
 .page__content {
   p, li {
     color: #363636;
@@ -87,6 +92,7 @@ ul {
 .color-green {
   color: #00cc99;
 }
+
 
 .inline-pills {
   list-style: none;

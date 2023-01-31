@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
-import { createSvgIconsPlugin }  from 'vite-plugin-svg-icons';
 import path from 'path';
 
 // https://vitejs.dev/config/
@@ -9,13 +8,6 @@ export default defineConfig({
     host: true
   },
   plugins: [
-    createSvgIconsPlugin({
-      // https://github.com/anncwb/vite-plugin-svg-icons
-      // Specify the icon folder to be cached
-      iconDirs: [path.resolve(process.cwd(), 'src/icons')],
-      // Specify symbolId format
-      symbolId: 'icon-[dir]-[name]',
-    })
   ],
   build: {
     rollupOptions: {

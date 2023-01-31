@@ -10,8 +10,7 @@
   },
   "devDependencies": {
     "sass": "^1.57.1",
-    "vite": "^4.0.0",
-    "vite-plugin-svg-icons": "^2.0.1"
+    "vite": "^4.0.0"
   },
   "dependencies": {
     "fast-glob": "^3.2.12"

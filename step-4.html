@@ -23,17 +23,22 @@
   </head>
   <body
     class="cover-image"
-    style="background-image: url(src/images/bg-m1_LR.jpg)"
+    style="background-image: url(src/images/bg-m1_LR.jpg); background-color: #B7B6B1"
   >
 
   <div class="global-nav">
     <img class="global-nav__logo" src="src/images/logo-numerisk-horiz-white.svg" alt="Numerisk">
-    <div class="global-nav__buttons">
-      <div class="button button--white"><i class="fa-solid fa-check-circle color-green"></i>Status: <em>Verified</em></div>
-      <div class="button button--white"><i class="fa-solid fa-phone"></i>1300 001 283</div>
-      <div class="button button--white"><i class="fa-solid fa-user"></i>
-        <i class="fa-solid fa-chevron-down"></i></div>
-    </div>
+
+      <div class="global-nav__buttons">
+        <div class="button button--white  hide-mobile">
+          <i class="fa-solid fa-phone"></i>
+          1300 001 283
+        </div>
+        <div class="button button--white">
+          <i class="fa-solid fa-user"></i>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </div>
     
   </div>
 
@@ -42,7 +47,7 @@
         <div class="hero__heading">
         <h1>Application <br>Complete</h1>
         </div>
-        <p class="hero__subline"> Thankyou for submitting your form. 
+        <p class="hero__subline"> Thank-you for submitting your form. 
         </p>
         <!-- <p class="hero__text">After completing your application, Numerisk will select the best solution and negotiate low coverage costs for you. We select from <a href="">our global network</a> of insurers using advanced <a href="">data-driven insights</a>.</p> -->
         <!-- <h5>We’re here to help at any step, simply call us on: <b>1300 001 283</b></h5> -->
@@ -56,31 +61,38 @@
         <span>Step 4 of 6</span>
       </div>
 
-
+      <div class="overflow-slide">
         <ol class="page__content bg-gray progress-steps progress-steps--down-arrows">
-          <li data-step="1">
-            <span>Verify <br>Practice</span>
-          </li>
-          <li data-step="2">
-            <span>Prepare necessary documents</span>
-          </li>
-          <li class="" data-step="3">
-            <span>Complete the application form</span>
-          </li>
-          <li class="is-active" class="" data-step="4">
-            <span>Discuss your requirements over a video call</span>
-          </li>
-          <li class="" data-step="5">
-            <span>We’ll review your application and negotiate your coverage</span>
-          </li>
-          <li class="" data-step="6">
-            <span>Receive and review your Quotation report</span>
-          </li>
-          <li class="" data-step="7">
-            <span>Chat with our team and finalise your Quotations</span>
-          </li>
+
+        <li data-step="1">
+          <span>
+            Practice
+            <br />
+            Identified
+          </span>
+        </li>
+        <li class="is-active" data-step="2">
+          <span>Prepare necessary documents</span>
+        </li>
+        <li class="" data-step="3">
+          <span>Complete the application form</span>
+        </li>
+        <li class="" data-step="4">
+          <span>Discuss your requirements over a video call</span>
+        </li>
+        <li class="" data-step="5">
+          <span>We’ll review your application and negotiate your coverage</span>
+        </li>
+        <li class="" data-step="6">
+          <span>Receive and review your Quotation report</span>
+        </li>
+        <li class="" data-step="7">
+          <span>Chat with our team and finalise your Quotations</span>
+        </li>
+
         </ol>
- 
+      </div>
+
       <div class="page__content">
  
         <div class="progress-steps-info">
@@ -88,13 +100,13 @@
           <div class="flex-row">
             <div class="flex-row--border-right">
               <h4>Let's discuss your needs</h4>
-              <p>In this step you choose a time to speak to one of our broking team to discuss your application.</p>
+              <p>Please choose a time to speak to one of our broking team to discuss your application.</p>
               <p>
-                If none of the available times suit you please either call our team on <b>1300 001 283</b> or email us at <a href="mailto:enquiry@numerisk.com.au">enquiry@numerisk.com.au</a> and we can arrange a more convenient time to discuss your application.
+                If none of the available times suit you please either call our team on <b class="no-wrap">1300 001 283</b> or email us at <a href="mailto:enquiry@numerisk.com.au">enquiry@numerisk.com.au</a> and we can arrange a more convenient time to discuss your application.
               </p>
             </div>
             <div class="text-center">
-
+              <img class="circle-icon" src="src/images/icon-cal-time.svg" alt="Date + Time">
               <h5>When ready:</h5>
               <button class="button">Choose a time</button>
             </div>

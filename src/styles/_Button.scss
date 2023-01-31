@@ -139,3 +139,9 @@ input[type='submit'] {
     }
   }
 }
+
+.button__icon--round {
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #fff;
+  margin-bottom: 1em;
+}
