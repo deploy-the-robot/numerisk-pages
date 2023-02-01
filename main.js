@@ -314,5 +314,6 @@ for (let i = 0; i < swiper_els.length; i++) {
 
 
 var scroll_to_spy = new Gumshoe('.js-gumshoe a', {
-	navClass: 'is-active'
+	navClass: 'is-active',
+	offset: 150
 });
