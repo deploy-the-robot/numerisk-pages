@@ -312,8 +312,11 @@ for (let i = 0; i < swiper_els.length; i++) {
 	swiper(swiper_els[i])
 }
 
+var gumshoe_el = document.querySelectorAll('.js-gumshoe')
+if (gumshoe_el.length > 0) {
+	var scroll_to_spy = new Gumshoe('.js-gumshoe a', {
+		navClass: 'is-active',
+		offset: 150
+	});
+}
 
-var scroll_to_spy = new Gumshoe('.js-gumshoe a', {
-	navClass: 'is-active',
-	offset: 150
-});
