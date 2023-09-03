@@ -1,5 +1,8 @@
 import "/src/styles/global.scss";
 import Gumshoe from "gumshoejs"
+import "/src/fonts/fontawesome/css/fontawesome.css";
+import "/src/fonts/fontawesome/css/solid.css";
+import "/src/fonts/fontawesome/css/regular.css";
 
 
 /*!
