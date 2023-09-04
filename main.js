@@ -323,3 +323,60 @@ if (gumshoe_el.length > 0) {
 	});
 }
 
+function stepThrough(el) {
+	const activeClass = "active"
+	el.setAttribute("data-current-step", 1)
+	el.stepEls = el.querySelectorAll("[data-step-number]")
+	el.nextBtn = el.querySelectorAll(".js-next-step")
+	el.prevBtn = el.querySelectorAll(".js-previous-step")
+	el.toBtn = el.querySelectorAll(".js-to-step")
+
+	el.getCurrentStep = function() {
+		return parseInt(this.getAttribute("data-current-step"))
+	}
+
+	el.setCurrentStep = function(stepInt) {
+		this.setAttribute("data-current-step", stepInt)
+	}
+
+	el.removeDisplayClasses = function() {
+		el.stepEls.forEach((step) => step.classList.remove(activeClass))
+	}
+
+	el.addDisplayClass = function() {
+		const current = el.querySelectorAll('[data-step-number="'+ el.getCurrentStep() +'"]')
+		if (current.length > 0) {
+			current[0].classList.add(activeClass)
+		}
+	}
+
+	el.setStep = function (stepInt) {
+		el.setCurrentStep(stepInt)
+		el.removeDisplayClasses()
+		el.addDisplayClass()
+	}
+
+	el.nextBtn.forEach((btn) => btn.addEventListener('click', () => {
+		const stepInt = el.getCurrentStep() + 1
+		el.setStep(stepInt)
+	}))
+
+	el.prevBtn.forEach((btn) => btn.addEventListener('click', () => {
+		const stepInt = el.getCurrentStep() - 1
+		el.setStep(stepInt)
+	}))
+
+	el.toBtn.forEach((btn) => btn.addEventListener('click', () => {
+		const stepInt = btn.getAttribute("data-step-to")
+		el.setStep(stepInt)
+	}))
+
+	el.addDisplayClass()
+
+}
+
+var stepThrough_el = document.querySelectorAll('.js-stepthrough');
+var stepThrough_els = Array.prototype.slice.call(stepThrough_el);
+for (let i = 0; i < stepThrough_els.length; i++) {
+	stepThrough(stepThrough_els[i])
+}

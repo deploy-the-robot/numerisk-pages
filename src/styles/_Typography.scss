@@ -94,6 +94,7 @@ ul {
 }
 
 
+
 .inline-pills {
   list-style: none;
   margin-bottom: 0;
@@ -131,4 +132,17 @@ ul {
 
 .text-center {
   text-align: center;
+}
+
+.font-semibold{font-weight:600;}
+
+.pill--outline {
+  background-color: rgba(255,255,255,0.1);
+  padding: .2rem .5rem;
+    margin: 0 .2rem .2em 0.2em;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.1) inset;
+  transition: box-shadow 0.3s;
+  &:hover {
+    box-shadow: 0 0 0 1px #FFF inset;
+  }
 }

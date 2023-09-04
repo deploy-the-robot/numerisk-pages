@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="Numerisk-icon-black-150x150.png" sizes="32x32" />
+    <link rel="icon" href="Numerisk-icon-black-300x300.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="Numerisk-icon-black-300x300.png" />
+    <meta name="msapplication-TileImage" content="Numerisk-icon-black-300x300.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Numerisk Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- TODO: REMOVE UNSUED WEIGHTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link href="src/fonts/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="src/fonts/fontawesome/css/solid.css" rel="stylesheet">
+    <link href="src/fonts/fontawesome/css/regular.css" rel="stylesheet"> -->
+
+  </head>
+  <body
+    class="cover-image"
+    style="background-image: url(src/images/bg-m3_LR.jpg); background-color: #B7B6B1"
+  >
+  <div class="background-overlay"></div>
+
+  <div class="global-nav">
+    <img class="global-nav__logo" src="src/images/logo-numerisk-horiz-white.svg" alt="Numerisk">
+
+      <div class="global-nav__buttons">
+        <div class="button button--white  hide-mobile">
+          <i class="fa-solid fa-phone"></i>
+          1300 001 283
+        </div>
+        <!-- <div class="button button--white">
+          <i class="fa-solid fa-user"></i>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div> -->
+      </div>
+    
+  </div>
+
+    <div class="hero">
+      <div class="hero__content">
+        <div class="hero__heading">
+          <h1 class="display-block">Welcome to Numerisk</h1>
+        </div>
+        <p class="hero__subline">Here you can gain access to your Numerisk Professional Indemnity Insurance application </p>
+        <!-- <p class="hero__text">After completing your application, Numerisk will select the best solution and negotiate low coverage costs for you. We select from <a href="">our global network</a> of insurers using advanced <a href="">data-driven insights</a>.</p> -->
+        <!-- <h5>We’re here to help at any step, simply call us on: <b>1300 001 283</b></h5> -->
+      </div>
+    </div>
+
+
+
+    <div class="page login-box">
+
+      <div class="flex-row">
+
+        <div class="page__content">
+
+          <img class="circle-icon" src="src/images/icon-shield.svg" alt="Numerisk Security">
+
+          <h4>Your security is our priority</h4>
+          <p>
+            Numerisk takes security seriously, and your data privacy is our top priority. To best manage personal data provided to Numerisk as part of an insurance application we utilise multifactor authentication.
+          </p>
+
+          <br>
+
+          <h5>Need help?</h5>
+          <p>
+            If you have any questions or concerns regarding authentication of your application, simply call or email us: <a class="no-wrap pill pill--outline" href="tel:1300001283">1300 001 283</a><a class="no-wrap pill pill--outline" href="mailto:enquiry@numerisk.com.au">enquiry@numerisk.com.au</a>
+          </p>
+        </div>
+
+        <div class="page__content">
+
+          <div class="js-stepthrough">
+
+            <div data-step-number="1">
+              <h5 class="font-semibold">MFA Authentication Setup</h5>
+              <p class="">Use your mobile number to authenticate access to your online application. Once entered you'll receive a verification code.
+              </p>
+              <label for="phoneInput">Your mobile number:</label>
+              <input type="email" name="emailInput" id="phoneInput" placeholder="e.g. +404123456" class="" value="">
+              <button type="submit" class="button js-next-step">Get verification code</button>
+            </div>
+
+            <div data-step-number="2">
+              <h5 class="font-semibold">Please check your mobile</h5>
+              <p class="">We've sent a verification code to your mobile via SMS. Note: It can take up to a few minutes to receive your code.
+              </p>
+              <label for="otpInput">Enter verification code:</label>
+              <input type="email" name="emailInput" id="otpInput" placeholder="" class="" value="">
+              <button type="submit" class="button js-next-step">Submit code</button>
+
+              <div class="form-divider"><span>Didn't get a code?</span></div>
+
+              <button type="submit" class="button button--outline js-to-step" data-step-to="1">Go back and try again</button>
+
+            </div>
+
+            <div data-step-number="3">
+              <h5 class="font-semibold">The code entered was incorrect</h5>
+              <p class="">Please re-enter the code and try again.
+              </p>
+              <label for="otpInput">Enter verification code:</label>
+              <input type="email" name="emailInput" id="otpInput" placeholder="" class="" value="">
+              <button type="submit" class="button">Submit code</button>
+
+            </div>
+
+
+  
+            <!-- <div class="form-divider"><span>or</span></div> -->
+  
+         
+
+    
+  
+          </div>
+
+
+        </div>
+        
+
+      </div>
+   
+
+    </div>
+    <!-- <div class="page help-info-box">
+
+      <div class="page__content bg-gray active" id="help">
+        <div class="icon-left">
+          <img class="icon-left__icon" src="src/images/icon-phone.svg" alt="Phone Icon">
+          <div class="icon-left__text">
+            <h5 class="font-semibold">Need help?</h5>
+            <p>
+              If you have any questions or concerns regarding authentication of your application, please contact us on <b class="no-wrap">1300 001 283</b> or email us at <a href="mailto:enquiry@numerisk.com.au">enquiry@numerisk.com.au</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="footer-wrap">
+      <footer>
+        <p>Numerisk Pty Ltd (ABN 93 660 217 845) is an Authorised Representative (001298428) of EBN Holdings Pty Ltd ABN 24 635 396 306 AFSL 518220
+        </p>
+      </footer>
+    </div>
+
+
+
+    <script type="module" src="/main.js"></script>
+
+  </body>
+</html>

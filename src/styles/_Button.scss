@@ -19,11 +19,12 @@ input[type='submit'] {
   white-space: nowrap;
   font-size: 1rem;
   line-height: 1;
+  transition: color 0.3s, border-color 0.3s, background-color 0.3s;
   &:focus,
   &:hover {
-    background-color: $color-secondary;
+    background-color: #FFF;
     border-color: $color-secondary;
-    color: $color-initial;
+    color: $color-primary;
     outline: 0;
   }
   &[disabled] {
@@ -127,6 +128,7 @@ input[type='submit'] {
     height: 70px;
   }
 
+
   .button__top,
   .button__bottom {
     padding: 1.25rem 2rem;
@@ -138,6 +140,17 @@ input[type='submit'] {
       margin: 0;
     }
   }
+}
+
+.button--icon {
+  display: flex;
+  align-items: center;
+}
+
+.button__icon-small {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
 }
 
 .button__icon--round {

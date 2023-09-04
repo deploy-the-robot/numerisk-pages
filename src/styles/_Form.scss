@@ -77,3 +77,23 @@ input[type='radio'] {
   font-weight: normal;
   margin-left: .5rem;
 }
+.form-divider {
+  position: relative;
+  text-align: center;
+  margin-bottom: 1rem;
+  span {
+    background-color: #FFF;
+    position: relative;
+    padding: 0 5px;
+    color: #888;
+  }
+  &:before {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: gainsboro;
+    position: absolute;
+    display: block;
+    top: 50%;
+  }
+}

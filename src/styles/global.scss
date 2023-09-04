@@ -90,7 +90,7 @@ $mobile-margin: 10px;
     line-height: 1;
     padding-bottom: 1.2rem;
     border-bottom: 9px solid #FFF;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.25em;
     letter-spacing: -0.01em;
   }
   &__subline {
@@ -458,6 +458,11 @@ p + .icon-left {
   width: 70px;
   height: 70px;
 }
+.circle-icon-large {
+  width: 110px;
+  height: 110px;
+  margin-bottom: 1rem;
+}
 
 
 .flex-row {
@@ -480,6 +485,7 @@ p + .icon-left {
     margin-right: 4em;
     border-right: 2px solid #EEE;
   }
+
 }
 
 .list-table {
@@ -613,9 +619,118 @@ p + .icon-left {
   .hero__content {
     padding-bottom: 10%;
     padding-top: 10%;
-
     margin-left: $mobile-margin * 2;
     margin-right: $mobile-margin * 2;
     font-size: 85%;
+  }
+}
+
+
+// Login box
+.login-box {
+  background-color: transparent;
+  .flex-row {
+    align-items: stretch;
+  }
+  form {
+    margin-bottom: 0;
+  }
+  input {
+    margin-bottom: 1rem;
+    border-color: #BBB;
+    transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+    &:hover {
+      border-color: #000;
+    }
+  }
+  h4, h5 {
+    + p {
+      margin-top: 0.1rem;
+    }
+  }
+  .button {
+    width: 100%;
+    justify-content: center;
+  }
+  .circle-icon {
+    margin: -1rem 0 1rem 0;
+  }
+  .page__content {
+    width: 50%;
+    &:first-child {
+      padding: 65px 50px;
+      background-color: rgba(0,0,0,0.75);
+      backdrop-filter: blur(10px);
+      color: #FFF;
+      * {
+        color: inherit;
+      }
+    }
+    &:last-child {
+      padding: 65px;
+      background-color: rgba(255,255,255,1);
+      padding-right: 65px;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .login-box .page__content {
+    width: 100%;
+    
+    &:first-child, &:last-child {
+      padding: 10% 9%;
+      margin:0;
+    }
+    .circle-icon {
+      margin-top: -1%;
+    }
+  }
+}
+
+.help-info-box .page__content{
+  padding: 50px 50px 44px 50px;
+}
+.login-box .circle-icon,
+.help-info-box .icon-left__icon {
+  width: 75px;
+  height: 75px;
+}
+
+
+.footer-wrap {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+footer {
+  background-color: rgba(0,0,0,0.9);
+  padding: 0.1em 1.5em;
+  p {
+    font-size: 90%;
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+  }
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.1);
+  z-index: -1;
+}
+
+.js-stepthrough {
+  [data-step-number] {
+    display: none;
+    &.active {
+      display: block;
+    }
   }
 }
