@@ -14,6 +14,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         s4: resolve(__dirname, 'step-4.html'),
+        altS4: resolve(__dirname, 'start-alt.html'),
         s0a: resolve(__dirname, 'step-0a.html'),
         s0b: resolve(__dirname, 'step-0b.html'),
         s0c: resolve(__dirname, 'step-0c.html'),
